@@ -1,0 +1,28 @@
+.citiesMenu {
+  width: 30%;
+  padding: 1rem;
+  button {
+    margin: 0.5rem 0 1rem 0;
+  }
+  input {
+    margin: 0.5rem 0 0 0;
+  }
+  ul {
+    margin: 0.5rem 0 1rem 0;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    li {
+      display: inline;
+      padding: 0 0.2em 0.2em 0.2em ;
+      &:hover {
+        cursor: pointer;
+        background-color: gainsboro;
+      }
+    }
+    a {
+      text-decoration: underline;
+
+    }
+  }
+}
