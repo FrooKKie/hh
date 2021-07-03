@@ -196,7 +196,6 @@ const VacanciesList = ({currentCityId, currentCityName}) => {
         }
     })
 
-    console.log('render',vacanciesState)
     /*при выборе нового города в меню начать пагинацию с первой страницы*/
     useEffect(() => {
         if (optionsState.currentCityId === currentCityId) return

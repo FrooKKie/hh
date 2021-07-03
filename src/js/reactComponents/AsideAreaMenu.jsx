@@ -68,13 +68,13 @@ const AsideAreaMenu = ({currentAreaId, currentCityId}) => {
                 <input
                     type={'text'}
                     onChange={(e) => {
-                        getCurrentArea(setAreaState, currentAreaId, e.target.value)
+                        getCurrentArea(setAreaState, currentAreaId, e.target.value, dispatch)
                     }}
                 />
 
                 <ul>
                     {areaState.cities === null || areaState.cities.length === 0
-                        ? <li>Поиск не дал результатов</li>
+                        ? <li>Поиск в данном регионе не дал результатов</li>
                         : areaState.cities.map(function(item) {
                             return (
                                 /*меню выбора города в области*/
